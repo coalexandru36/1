@@ -1,0 +1,31 @@
+-- local disableShuffle = true
+-- function disableSeatShuffle(flag)
+-- 	disableShuffle = flag
+-- end
+
+-- CreateThread(function()
+-- 	local ticks = 1000
+-- 	while true do
+-- 		if IsPedInAnyVehicle(PlayerPedId(), false) and disableShuffle then
+-- 			if GetPedInVehicleSeat(GetVehiclePedIsIn(PlayerPedId(), false), 0) == PlayerPedId() then
+-- 				if GetIsTaskActive(PlayerPedId(), 165) then
+-- 					ticks = 1
+-- 					SetPedIntoVehicle(PlayerPedId(), GetVehiclePedIsIn(PlayerPedId(), false), 0)
+-- 				end
+-- 			end
+-- 		end
+-- 		Wait(ticks)
+-- 		ticks = 1000
+-- 	end
+-- end)
+
+-- RegisterNetEvent("SeatShuffle")
+-- AddEventHandler("SeatShuffle", function()
+-- 	if IsPedInAnyVehicle(PlayerPedId(), false) then
+-- 		disableSeatShuffle(false)
+-- 		Wait(5000)
+-- 		disableSeatShuffle(true)
+-- 	else
+-- 		CancelEvent()
+-- 	end
+-- end)
